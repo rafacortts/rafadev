@@ -108,14 +108,14 @@ const Projects = () => {
     ],
   };
   return (
-    <div className="shadow-md">
+    <div className="shadow-md pb-10">
       <div className=" container m-auto mt-12 ">
         <h1 className=" text-center text-3xl"> Minha Linguagens </h1>
         {/* <p className="text-center mt-2 ">Estas são as Linguagens que usarei em seu projeto </p> */}
         <div className="mt-10 ">
           <Slider {...settings}>
             {ProjetosCard.map(({ titulo, paragrafo, imagem }) => (
-              <div className="bg-ba h-[270px] text-black rounded-xl items-center text-center ">
+              <div className=" h-[270px] text-blue border-2 border-blue-100 rounded-xl   items-center text-center ">
                 <div className="flex justify-center m-5">{imagem}</div>
 
                 <div className="flex flex-col justify-center items-center">
