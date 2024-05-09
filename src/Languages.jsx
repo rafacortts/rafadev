@@ -124,7 +124,7 @@ const Projects = () => {
                   </p>
                   <p className="text-center m-1">{paragrafo}</p>
                   <button className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-white hover:text-black hover:border-2 hover:border-blue-700">
-                    Veja Mais
+                    +
                   </button>
                 </div>
               </div>
