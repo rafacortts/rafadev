@@ -6,3 +6,21 @@
 .slick-slide > div{
     margin: 0 8px;
 }
+
+@keyframes gradient-bg {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .bg-gradient-animated {
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80);
+    background-size: 600% 600%;
+    animation: gradient-bg 16s ease infinite;
+  }
