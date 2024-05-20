@@ -20,7 +20,9 @@
   }
   
   .bg-gradient-animated {
-    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80);
+    background: linear-gradient(270deg, #4a90e2, #50a5f1, #5ebcf7);
     background-size: 600% 600%;
     animation: gradient-bg 16s ease infinite;
   }
+
+  

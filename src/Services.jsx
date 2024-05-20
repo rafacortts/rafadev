@@ -15,7 +15,7 @@ const ServicesData = [
 
   {
     id: 2,
-    heading: "Leve a Melhor Experiência ao Usuário Junto com a Modernidade ",
+    heading: "Leve a Melhor Experiência ao Usuário ",
     text: "Uma ótima UX/UI não é apenas sobre design, é a ponte que transforma os visitantes em defensores leais do seu mundo digital.",
     icon: <FaRegUser className="text-6xl" />,
   },
@@ -23,7 +23,7 @@ const ServicesData = [
   {
     id: 3,
     heading: "Projetos Com Entrega Rápida Garantida",
-    text: "A entrega rápida da sua landing page não é apenas velocidade, é a via expressa para capturar a atenção, engajar os usuários e gerar conversões em um piscar de olhos.",
+    text: "A entrega rápida da sua landing page não é apenas velocidade, é a via expressa para capturar a atenção, engajar os usuários ",
     icon: <MdOutlineRocketLaunch className="text-6xl" />,
   },
 ];

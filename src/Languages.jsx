@@ -16,56 +16,56 @@ const ProjetosCard = [
     id: 4,
     titulo: "ReactJS",
     paragrafo:
-      "Adquiri habilidades em React através de um curso no Senai e tutoriais no YouTube.",
+      "Adquiri habilidades em React através dos cursos no Senai e tutoriais no YouTube.",
     imagem: <FaReact className="text-6xl " />,
   },
 
   {
     id: 4,
     titulo: "Tailwindcss",
-    paragrafo: " Esse é meu projeto pessoal para tanantantantan",
+    paragrafo: "Adquiri habilidades em React através dos cursos no Senai e tutoriais no YouTube.",
     imagem: <SiTailwindcss className="text-6xl" />,
   },
 
   {
     id: 4,
     titulo: "TypeScript",
-    paragrafo: " Adquiri habilidades em usar através de cursos no Senai e tutoriais no YouTube.",
+    paragrafo: "Adquiri habilidades em React através dos cursos no Senai e tutoriais no YouTube.",
     imagem: <SiTypescript className="text-6xl" />,
   },
 
   {
     id: 4,
     titulo: "JavaScript",
-    paragrafo: " Adquiri habilidades em usar JavaScript através de cursos no Senai e tutoriais no YouTube.",
+    paragrafo: "Adquiri habilidades em JavaScript através dos cursos no Senai e na Faculdade.",
     imagem: <SiJavascript className="text-6xl" />,
   },
 
   {
     id: 4,
     titulo: "PHP",
-    paragrafo: " Esse é meu projeto pessoal para tanantantantan",
+    paragrafo: "Adquiri habilidades em PHP através dos cursos no Senai , na Faculdade e Freelancer",
     imagem: <SiPhp className="text-6xl" />,
   },
 
   {
     id: 4,
     titulo: "MySQL",
-    paragrafo: "Adquiri habilidades em usar o MySQL através de cursos no Senai e tutoriais no YouTube.",
+    paragrafo: "Adquiri habilidades em MySQL através dos cursos no Senai e na Faculdade.",
     imagem: <SiMysql className="text-6xl" />,
   },
 
   {
     id: 4,
     titulo: "Java",
-    paragrafo: " Esse é meu projeto pessoal para tanantantantan",
+    paragrafo: "Adquiri habilidades em Java e S através dos cursos no Senai e na Faculdade.",
     imagem: <LiaJava className="text-6xl " />,
   },
 
   {
     id: 4,
     titulo: "React Native",
-    paragrafo: " Adquiri habilidades em usar React Native através de cursos no Senai e tutoriais no YouTube.",
+    paragrafo: " Adquiri habilidades em React através dos cursos no Senai e tutoriais no YouTube.",
     imagem: <TbBrandReactNative className="text-6xl " />,
   },
 ];
@@ -115,7 +115,7 @@ const Projects = () => {
         <div className="mt-10 ">
           <Slider {...settings}>
             {ProjetosCard.map(({ titulo, paragrafo, imagem }) => (
-              <div className=" h-[270px] text-blue border-2 border-blue-100 rounded-xl   items-center text-center ">
+              <div className=" h-[270px] text-blue  rounded-xl items-center text-center  ">
                 <div className="flex justify-center m-5">{imagem}</div>
 
                 <div className="flex flex-col justify-center items-center">
@@ -124,7 +124,7 @@ const Projects = () => {
                   </p>
                   <p className="text-center m-1">{paragrafo}</p>
                   <button className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-white hover:text-black hover:border-2 hover:border-blue-700">
-                    +
+                    Veja Mais
                   </button>
                 </div>
               </div>

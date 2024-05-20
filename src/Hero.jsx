@@ -5,11 +5,11 @@ const Hero = () => {
       <main className=" sm:mt-0 container ">
         <div className=" min-h-[500px] flex items-center justify-center">
           <div className="space-y-5 justify-center p-12 ">
-            <h1 className="text-3xl font-bold text-center">
+            <h1 className="text-3xl font-bold text-center text-white">
               Com Rafael, cada linha de código é uma jornada rumo à{" "}
               <span className="text-blue-700">inovação e excelência.</span>
             </h1>
-            <p className="text-center">
+            <p className="text-center text-white">
               Rafael é um desenvolvedor comprometido e apaixonado por
               tecnologia, que transforma projetos em obras-primas digitais com
               excelência. Sua busca incessante por soluções criativas e

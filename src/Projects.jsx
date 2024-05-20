@@ -1,74 +1,46 @@
 import React from "react";
-import Teste from "./Img/teste.webp";
-import { FaGithub } from "react-icons/fa";
-import { TbWorldWww } from "react-icons/tb";
 
-const Projects = [
-  {
-    id: 10,
-    src: Teste,
-    ico: <FaGithub />,
-    ico2: <TbWorldWww />,
-  },
-  {
-    id: 11,
-    src: Teste,
-    ico: <FaGithub />,
-    ico2: <TbWorldWww />,
-  },
-  {
-    id: 12,
-    src: Teste,
-    ico: <FaGithub />,
-    ico2: <TbWorldWww />,
-  },
-  {
-    id: 13,
-    src: Teste,
-    ico: <FaGithub />,
-    ico2: <TbWorldWww />,
-  },
-  {
-    id: 14,
-    src: Teste,
-    ico: <FaGithub />,
-    ico2: <TbWorldWww />,
-  },
-  {
-    id: 15,
-    src: Teste,
-    ico: <FaGithub />,
-    ico2: <TbWorldWww />,
-  },
-];
+const Projects = () => {
+  const blogs = [
+    {
+      id: 1,
+      title: "vamo vamo vamo vamo vamo vamo vamo vamo vamo ifewjkijwefi9fjw9efew",
+      image: "./src/img/site01.png",
+    },
+    {
+      id: 2,
+      title: "vamo vamo vamo vamo vamo vamo vamo vamo vamo",
+      image: "./src/img/site02.jpeg",
+    },
+    {
+      id: 3,
+      title: "vamo vamo vamo vamo vamo vamo vamo vamo vamo",
+      image: "./src/img/site03.jpeg",
+    },
+  ];
 
-function Projetos() {
   return (
-    <div className=" mt-12 container">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <h1 className="text-center text-3xl"> Meus Projetos </h1>
-          <p className="py-3 text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima,
-            ex?
-          </p>
-        </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-8">
-          {Projects.map(({ id, src, ico, ico2 }) => (
-            <div className="shadow-md shadow-gray-100 rounded-lg">
-              <img src={src} alt="" className=" duration-200 hover:scale-105" />
-              <div className="flex items-center justify-center">
-                <button className=" text-4xl px-6 m-4 ">{ico}</button>
-                <button className=" text-4xl  px-6 m-4  text-blue-700 ">
-                  {ico2}
-                </button>
+    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12 container">
+      <div className="text-center md:w-1/2 mx-auto">
+        <h2 className="text-4xl text-black pb-8">Meus Projetos</h2>
+      </div>
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
+        {blogs.map((blog) => (
+          <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
+            <img src={blog.image} alt={blog.title} />
+            <div>
+              <h3 className="text-center px-4 py-8 bg-white shadow-lg rounded-md mx-auto md:w-3/4 absolute left-0 right-0 -bottom-12">
+                {blog.title}
+              </h3>
+              <div className="flex items-center justify-center gap-8 absolute left-0 right-0 -bottom-11">
+                <a href="https://github.com/rafacortts/AppleCommerce" className="font-bold text-blue-700 hover:text-blue-400">Veja Mais</a>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
-export default Projetos;
+export default Projects;
