@@ -1,20 +1,21 @@
 import React from "react";
+import imgTeste from './Img/site01.png'
 
 const Projects = () => {
   const blogs = [
     {
       id: 1,
-      title: "vamo vamo vamo vamo vamo vamo vamo vamo vamo ifewjkijwefi9fjw9efew",
+      title: "Texto de teste de imagem ",
       image: "./src/img/site01.png",
     },
     {
       id: 2,
-      title: "vamo vamo vamo vamo vamo vamo vamo vamo vamo",
+      title: "Texto de teste de imagem",
       image: "./src/img/site02.jpeg",
     },
     {
       id: 3,
-      title: "vamo vamo vamo vamo vamo vamo vamo vamo vamo",
+      title: "Texto de teste de imagem",
       image: "./src/img/site03.jpeg",
     },
   ];
@@ -27,7 +28,7 @@ const Projects = () => {
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
         {blogs.map((blog) => (
           <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
-            <img src={blog.image} alt={blog.title} />
+            <img src={imgTeste} alt={blog.title} />
             <div>
               <h3 className="text-center px-4 py-8 bg-white shadow-lg rounded-md mx-auto md:w-3/4 absolute left-0 right-0 -bottom-12">
                 {blog.title}
