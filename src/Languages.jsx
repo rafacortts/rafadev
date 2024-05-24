@@ -78,7 +78,7 @@ const Projects = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-    arrows: false,
+    arrows: true,
     responsive:
      [
       {
@@ -108,7 +108,7 @@ const Projects = () => {
     ],
   };
   return (
-    <div className="shadow-md pb-10">
+    <div className=" pb-10">
       <div className=" container m-auto mt-12 ">
         <h1 className=" text-center text-3xl"> Minha Linguagens </h1>
         {/* <p className="text-center mt-2 ">Estas são as Linguagens que usarei em seu projeto </p> */}

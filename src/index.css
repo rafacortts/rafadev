@@ -25,4 +25,23 @@
     animation: gradient-bg 16s ease infinite;
   }
 
-  
+  /* Mudar a cor das setas do Slick Slider */
+
+.slick {
+  color: #4B94E5; /* Define a cor desejada para as setas */
+  font-size: 24px; /* Ajusta o tamanho das setas se necessário */
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #4B94E5; /* Define a cor desejada para as setas */
+}
+
+
+/* Ocultar as setas em telas menores */
+@media (max-width: 600px) {
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+}
+

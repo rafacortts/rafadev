@@ -18,7 +18,8 @@ const Hero = () => {
             </p>
             <div className="space-x-4 flex justify-center">
               <a
-                href="#"
+                href="
+                http://wa.me/5521998095334"
                 className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-transparent hover:text-black hover:border-2 hover:border-blue-700"
               >
                 {" "}
