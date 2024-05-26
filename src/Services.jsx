@@ -22,8 +22,8 @@ const ServicesData = [
 
   {
     id: 3,
-    heading: "Projetos Com Entrega Rápida Garantida",
-    text: "A entrega rápida da sua landing page não é apenas velocidade, é a via expressa para capturar a atenção, engajar os usuários ",
+    heading: "Impulsione suas vendas com landing pages poderosas",
+    text: "Investir em landing pages poderosas é essencial para aumentar suas conversões e maximizar o retorno sobre o investimento em marketing digital",
     icon: <MdOutlineRocketLaunch className="text-6xl" />,
   },
 ];

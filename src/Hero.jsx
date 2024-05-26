@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="bg-blue-00 shadow-md bg-gradient-animated">
+    <div className="bg-blue-00 shadow-md bg-gradient-animated mt-12">
       <main className=" sm:mt-0 container ">
         <div className=" min-h-[500px] flex items-center justify-center">
           <div className="space-y-5 justify-center p-12 ">

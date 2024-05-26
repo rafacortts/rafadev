@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import Hero from "./Hero";
 import Services from "./Services";
+import Sell from "./Sell"
 import Projects from "./Languages"; // LINGUAS -> TROCAR ESSA MERDA NO MOMENTO OPORTUNO
 import Projetos from "./Projects";
 import About from "./About";
@@ -28,6 +29,7 @@ const App = () => {
       <Nav />
       <Hero />
       <Services />
+      <Sell/>
       <Projects />
       <About />
       <Projetos />
@@ -45,10 +47,10 @@ const popupStyles = {
     color: '#000',
     padding: '20px',
     zIndex: 1000,
-    borderRadius: '3px',
+    borderRadius: '10px',
     textAlign: 'center',
     maxWidth: '700px',
-    border : '1px solid gray'
+   
     
   },
   acceptButton: {
