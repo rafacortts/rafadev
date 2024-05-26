@@ -2,20 +2,18 @@ import React from "react";
 import Nav from "./Nav";
 import Hero from "./Hero";
 import Services from "./Services";
-import Sell from "./Sell"
+import Sell from "./Sell";
 import Projects from "./Languages"; // LINGUAS -> TROCAR ESSA MERDA NO MOMENTO OPORTUNO
 import Projetos from "./Projects";
 import About from "./About";
 import Teste from "./Footer";
 import CookieConsent from "react-cookie-consent";
+import Price from "./Price";
 
 const App = () => {
- 
-
-
   return (
     <div>
-          <CookieConsent
+      <CookieConsent
         location="none"
         buttonText="Aceitar"
         cookieName="myAwesomeCookieName2"
@@ -31,6 +29,7 @@ const App = () => {
       <Services />
       <Sell/>
       <Projects />
+      <Price />
       <About />
       <Projetos />
       <Teste />
@@ -39,30 +38,25 @@ const App = () => {
 };
 const popupStyles = {
   container: {
-    position: 'fixed',
-    top: '85%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    background: 'white',
-    color: '#000',
-    padding: '20px',
+    position: "fixed",
+    top: "85%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    background: "white",
+    color: "#000",
+    padding: "20px",
     zIndex: 1000,
-    borderRadius: '10px',
-    textAlign: 'center',
-    maxWidth: '700px',
-   
-    
+    borderRadius: "10px",
+    textAlign: "center",
+    maxWidth: "700px",
   },
   acceptButton: {
-    color: '#fff',
-    background: '#000',
-    padding: '10px 20px',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  
-    
+    color: "#fff",
+    background: "#000",
+    padding: "10px 20px",
+    borderRadius: "5px",
+    cursor: "pointer",
   },
-
 };
 
 export default App;

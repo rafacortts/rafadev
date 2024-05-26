@@ -41,7 +41,7 @@ const navItems = [
 
   return (
    <header className='w-full bg-white fixed top-0 left-0 right-0 shadow-lg'>
-    <nav className={`py-4 lg:px-14 px-4 ${Sticky ? "sticky top-0 left-0 right-0 border-0 bg-white duration-300" : ""}`}>
+    <nav className={`py-4 lg:px-14 px-4 ${Sticky ? "sticky top-0 left-0 right-0 border-0 bg-white duration-100" : ""}`}>
       <div className='flex justify-between items-center text-base gap-8'>
        <a href="#" className='text-2xl flex items-center space-x-3'>RafaDev</a>
       
