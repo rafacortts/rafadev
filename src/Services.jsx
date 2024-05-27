@@ -36,7 +36,7 @@ const Services = () => {
           {ServicesData.map(({ id, heading, text, icon }) => (
             <div key={id} className="space-y-3 text-center p-5 sh">
               <div className="flex justify-center">{icon}</div>
-              <h1 className="text-2xl font-bold">{heading}</h1>
+              <h1 className="text-3xl sm:text-2xl lg:text-3xl font-semibold">{heading}</h1>
               <p>{text}</p>
             </div>
           ))}
