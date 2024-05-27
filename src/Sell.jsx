@@ -1,5 +1,6 @@
 import React from "react";
 import LandingPage from "./Img/lp.jpg";
+import Grafico from './Img/alta.jpeg'
 
 function Sell() {
   return (
@@ -9,8 +10,8 @@ function Sell() {
           <img src={LandingPage} alt="" />
         </div>
         <div className="md:w-3/5 mx-auto">
-          <h2 className="text-4xl md:h-4/5 mb-4">
-            O poder das landing pages para aumentar as vendas
+          <h2 className="text-3xl sm:text-5xl lg:text-5xl  md:h-4/5 mb-4">
+            O poder das landing pages para aumentar as suas vendas
           </h2>
           <p className="md:w-3/4 mb-8">
             Diferente das páginas comuns do seu site, que podem oferecer uma

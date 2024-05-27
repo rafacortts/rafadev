@@ -9,6 +9,8 @@ import About from "./About";
 import Teste from "./Footer";
 import CookieConsent from "react-cookie-consent";
 import Price from "./Price";
+import Lps from "./Lps";
+
 
 const App = () => {
   return (
@@ -29,6 +31,7 @@ const App = () => {
       <Services />
       <Sell/>
       <Projects />
+      <Lps/>
       <Price />
       <About />
       <Projetos />

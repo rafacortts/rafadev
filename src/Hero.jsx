@@ -1,13 +1,13 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="bg-blue-00 shadow-md bg-gradient-animated mt-12">
+    <div className="bg-blue-00 shadow-md bg-black mt-12">
       <main className=" sm:mt-0 container ">
         <div className=" min-h-[500px] flex items-center justify-center">
           <div className="space-y-5 justify-center p-12 ">
-            <h1 className="text-3xl font-bold text-center text-white">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl  font-bold text-center text-white">
               Com Rafael, cada linha de código é uma jornada rumo à{" "}
-              <span className="text-blue-700">inovação e excelência.</span>
+              <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">inovação e excelência.</span>
             </h1>
             <p className="text-center text-white">
               Rafael é um desenvolvedor comprometido e apaixonado por
@@ -20,7 +20,7 @@ const Hero = () => {
               <a
                 href="
                 http://wa.me/5521998095334"
-                className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-transparent hover:text-black hover:border-2 hover:border-blue-700"
+                className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-transparent hover:text-white hover:border-2 hover:border-blue-700"
               >
                 {" "}
                 Entre em Contato
