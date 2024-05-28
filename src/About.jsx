@@ -1,31 +1,92 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const About = () => {
-  return (
-    <div className='bg-gradient-animated'>
+  const funFacts = [
+    { value: "40K", description: "Clientes Satisfeitos" },
+    { value: "30K", description: "Projetos Concluídos" },
+    { value: "50", description: "Prêmios Recebidos" },
+    { value: "10", description: "Anos de Experiência" },
+  ];
 
-  
-      <div className="shadow-md container mt-12 text-white relative z-10">
-        <main className="sm:mt-0 container">
-          <div className="min-h-[500px] flex items-center justify-center">
-            <div className="space-y-5 justify-center p-12">
-              <h1 className="text-3xl text-center">
-                Me chamo Rafael Cortes, Tenho 20 anos, Estudante de Análise e Desenvolvimento de Sistemas & Física.
-              </h1>
-              <p className="text-center">
-                Criei o Projeto "Rafa.dev" com o intuito de Documentar e Divulgar minha Rotina de Estudante e Minhas Buscar por Oportunidades de Estágio. Atualmente concílio a Faculdade de Análise e Desenvolvimento de Sistemas e o Curso no Senai de Desenvolvimento Mobile. Em Breve irá começar minhas Aulas de Física na UFF.
-              </p>
-              <div className="space-x-4 flex justify-center">
-                <a href='http://wa.me/5521998095334' className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-transparent hover:text-white hover:border-2 hover:border-blue-700">
-                  Entre em Contato
-                </a>
-              </div>
-            </div>
+  const containerControls = useAnimation();
+  const ref = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          containerControls.start("visible");
+        }
+      },
+      { threshold: 0.1 } // Adjust threshold as needed
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [containerControls]);
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <div className="min-h-screen flex justify-center items-center bg-white">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={containerControls}
+        variants={containerVariants}
+        className="bg-black p-12 w-full max-w-7xl flex flex-col md:flex-row justify-between items-start md:items-center gap-12 rounded-xl mx-4"
+      >
+        <div className="md:w-2/3">
+          <h2 className="text-5xl mb-5 text-white">Sobre nós</h2>
+          <p className="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            facere praesentium assumenda consectetur quae. Molestiae magnam sed
+            minus nisi, delectus culpa non accusantium inventore velit nulla
+            similique vitae? Placeat, voluptas!
+          </p>
+        </div>
+        <div className="md:w-1/3 w-full mt-8 md:mt-0">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-8">
+            {funFacts.map((fact, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="flex h-auto items-center gap-1"
+              >
+                <h2 className="md:text-5xl text-3xl text-white">{fact.value}</h2>
+                <span className="text-blue-100 text-lg">+</span>
+                <p className="mb-2 text-xs leading-tight text-white">
+                  {fact.description}
+                </p>
+              </motion.div>
+            ))}
           </div>
-        </main>
-      </div>
+        </div>
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
 export default About;

@@ -34,7 +34,7 @@ const App = () => {
       <Lps/>
       <Price />
       <About />
-      <Projetos />
+      {/* <Projetos /> */}
       <Teste />
     </div>
   );
