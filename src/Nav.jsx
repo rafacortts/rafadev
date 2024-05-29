@@ -38,6 +38,10 @@ const navItems = [
 
 ]
 
+const handleWhatsAppRedirect = () => {
+  window.location.href = 'https://wa.me/5521998095334';
+};
+
 
   return (
    <header className='w-full bg-white fixed top-0 left-0 right-0 shadow-lg'>
@@ -52,7 +56,7 @@ const navItems = [
       </ul>
       <div className='space-x-12 lg:flex  hidden items-center'>
       
-        <button className='bg-blue-700 border-2 border-blue-700  text-white py-2 px-4 transition-all duration-300 rounded hover:bg-transparent hover:text-black hover:border-1 hover:border-blue-700 '>Contato</button>
+        <button  onClick={handleWhatsAppRedirect}  className='bg-blue-700 border-2 border-blue-700   text-white py-2 px-4 transition-all duration-300 rounded-full hover:bg-transparent hover:text-black hover:border-1 hover:border-blue-700 '>Entre em Contato</button>
 
       </div>
 

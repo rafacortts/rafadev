@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Grenn from './Img/ok.png';
 import Red from './Img/Not.png';
+import { Link } from "react-scroll";
 
 const Price = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -49,6 +50,7 @@ const Price = () => {
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mb-2 text-center">
           Os <span className="bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent ">Melhores Planos</span> do Mercado Para Turbinar Suas Vendas
         </h2>
+     
        
         <div className="mt-16">
           <label

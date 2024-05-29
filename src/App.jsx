@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import Services from "./Services";
 import Sell from "./Sell";
 import Projects from "./Languages"; // LINGUAS -> TROCAR ESSA MERDA NO MOMENTO OPORTUNO
-import Projetos from "./Projects";
+
 import About from "./About";
 import Teste from "./Footer";
 import CookieConsent from "react-cookie-consent";
@@ -34,7 +34,6 @@ const App = () => {
       <Lps/>
       <Price />
       <About />
-      {/* <Projetos /> */}
       <Teste />
     </div>
   );

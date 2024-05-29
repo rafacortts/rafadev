@@ -42,6 +42,9 @@ const Hero = () => {
     visible: { opacity: 1, y: 0 },
   };
 
+  const handleWhatsAppRedirect = () => {
+    window.location.href = 'https://wa.me/5521998095334';
+  };
   return (
     <div className="bg-black shadow-md mt-12">
       <main className="sm:mt-0 container">
@@ -76,12 +79,7 @@ const Hero = () => {
               variants={itemVariants}
               className="space-x-4 flex justify-center"
             >
-              <a
-                href="http://wa.me/5521998095334"
-                className="bg-blue-700 border-2 border-blue-700 text-white p-2 rounded-full transition hover:bg-transparent hover:text-white hover:border-2 hover:border-blue-700"
-              >
-                Entre em Contato
-              </a>
+              <button  onClick={handleWhatsAppRedirect}  className='bg-blue-700 border-2 border-blue-700   text-white py-2 px-4 transition-all duration-300 rounded-full hover:bg-transparent hover:text-white hover:border-1 hover:border-blue-700 '>Entre em Contato</button>
             </motion.div>
           </motion.div>
         </div>
