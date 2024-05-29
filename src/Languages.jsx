@@ -14,14 +14,13 @@ const Languages = () => {
       <div className='text-center my-8'>
         <h2 className='text-3xl sm:text-5xl lg:text-6xl mb-2'>Tenha Acesso as Melhores Linguagens do Mercado</h2>
         <p className='text-black'>Desenvolvemos Landing Pages profissionais para e-books, cursos online e mentoria digital. Destaque-se no mercado digital com nossa expertise em conversão e design. <span className='text-blue-700 font-bold'>Alcance mais clientes e impulsione seus resultados hoje mesmo.</span>  </p>
-        <div className='my-12 flex flex-wrap justify-between items-center  '>
-          <img src={ReactLogo} className='w-20 h-20 ' alt='React Logo'/>
-          <img src={TailwindLogo} className='w-20 h-20' alt='React Logo'/>
-          <img src={JavaScriptLogo} className='w-20 h-20' alt='React Logo'/>
-          <img src={TypeScriptLogo} className='w-20 h-20' alt='React Logo'/>
-          <img src={CssLogo} className='w-20 h-20' alt='React Logo'/>
-          <img src={PhpLogo} className='w-20 h-20' alt='React Logo'/>
-         
+        <div className='my-12 flex flex-wrap justify-between items-center'>
+          <img src={ReactLogo} className='w-20 h-20 square-logo ' alt='React Logo'/>
+          <img src={TailwindLogo} className='w-20 h-20 square-logo' alt='Tailwind Logo'/>
+          <img src={JavaScriptLogo} className='w-20 h-20 square-logo' alt='JavaScript Logo'/>
+          <img src={TypeScriptLogo} className='w-20 h-20 square-logo' alt='TypeScript Logo'/>
+          <img src={CssLogo} className='w-20 h-20 square-logo' alt='CSS Logo'/>
+          <img src={PhpLogo} className='w-20 h-20 square-logo' alt='PHP Logo'/>
         </div>
       </div>
     </div>

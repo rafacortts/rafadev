@@ -1,8 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faLinkedin , faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
+
+  const handleWhatsAppRedirect = () => {
+    window.location.href = 'https://wa.me/5521998095334';
+  };
+
+
   return (
     <footer className="bg-black text-white pt-10">
       <div className="container mx-auto md:flex md:justify-between md:items-center sm:px-12 px-4 py-7">
@@ -15,7 +21,10 @@ const Footer = () => {
             placeholder="Envie seu Email"
             className="text-gray-800 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
           />
-          <button>envie agora</button>
+         <button
+              onClick={handleWhatsAppRedirect}
+              className='bg-blue-700 border-2 border-blue-700 text-white py-2 px-4 transition-all duration-300 rounded-full hover:bg-transparent hover:text-white hover:border-1 hover:border-blue-700'
+            >Envie Agora</button>
          
         </div>
       </div>
@@ -41,10 +50,10 @@ const Footer = () => {
         <div>
           <h2 className="text-white font-semibold mb-2">Siga-nos</h2>
           <div className="flex justify-center space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon={faFacebook} size="lg" /></a>
+            <a href="https://github.com/rafacortts" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon={faGithub} size="lg" /></a>
             <a href="#" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon={faTwitter} size="lg" /></a>
             <a href="#" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon={faInstagram} size="lg" /></a>
-            <a href="#" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
+            <a href="https://www.linkedin.com/in/rafael-cortes-404b4b2a4/" className="text-gray-400 hover:text-white"><FontAwesomeIcon icon={faLinkedin} size="lg" /></a>
           </div>
         </div>
       </div>

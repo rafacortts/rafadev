@@ -3,53 +3,19 @@
 @tailwind utilities;
 
 
-.slick-slide > div{
-    margin: 0 8px;
-}
-
-@keyframes gradient-bg {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .bg-gradient-animated {
-    background: linear-gradient(270deg, #4a90e2, #50a5f1, #5ebcf7);
-    background-size: 600% 600%;
-    animation: gradient-bg 16s ease infinite;
-  }
-
-  /* Mudar a cor das setas do Slick Slider */
-
-.slick {
-  color: #4B94E5; /* Define a cor desejada para as setas */
-  font-size: 24px; /* Ajusta o tamanho das setas se necessário */
-}
-
-.slick-prev::before,
-.slick-next::before {
-  color: #4B94E5; /* Define a cor desejada para as setas */
-}
 
 
 /* Ocultar as setas em telas menores */
-@media (max-width: 600px) {
-  .slick-prev, .slick-next {
-    display: none !important;
-  }
+
+
+
+/* Adicione isso ao seu arquivo CSS ou ao arquivo de estilos globais do seu projeto */
+.square-logo {
+  transition: background-color 0.3s ease;
+
 }
 
-
-
-
-@keyframes marquee {
-  100% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+.square-logo:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Ou qualquer outra cor de sua preferência */
 }
 
