@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const Teste = () => {
+const Footer = () => {
   return (
     <footer className="bg-black text-white pt-10">
       <div className="container mx-auto md:flex md:justify-between md:items-center sm:px-12 px-4 py-7">
@@ -15,6 +15,7 @@ const Teste = () => {
             placeholder="Envie seu Email"
             className="text-gray-800 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
           />
+          <button>envie agora</button>
          
         </div>
       </div>
@@ -55,4 +56,4 @@ const Teste = () => {
   );
 };
 
-export default Teste;
+export default Footer;

@@ -1,7 +1,4 @@
 import React from "react";
-import Green from "./Img/ok.png";
-import LandingPage from "./Img/lp.jpg";
-import { FaBox } from 'react-icons/fa';
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import LP from './Img/LandPage1.png'
 import LP1 from './Img/LandPage2.png'
