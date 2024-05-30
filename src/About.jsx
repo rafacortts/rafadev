@@ -4,9 +4,9 @@ import { motion, useAnimation } from "framer-motion";
 const About = () => {
   const funFacts = [
     { value: "40K", description: "Clientes Satisfeitos" },
-    { value: "30K", description: "Projetos Concluídos" },
+    { value: "12", description: "Projetos Concluídos" },
     { value: "50", description: "Prêmios Recebidos" },
-    { value: "10", description: "Anos de Experiência" },
+    { value: "1", description: "Anos de Experiência" },
   ];
 
   const containerControls = useAnimation();
@@ -61,10 +61,12 @@ const About = () => {
         <div className="md:w-2/3">
           <h2 className="text-5xl mb-5 text-white">Sobre nós</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            facere praesentium assumenda consectetur quae. Molestiae magnam sed
-            minus nisi, delectus culpa non accusantium inventore velit nulla
-            similique vitae? Placeat, voluptas!
+            Bem-vindo à nossa página! Sou um programador full-stack em início de
+            carreira, com 7 meses de experiência intensa e apaixonada em
+            desenvolvimento de software. Durante esse período, mergulhei de
+            cabeça em diversas tecnologias e ferramentas que me permitem
+            construir soluções completas, desde a interface do usuário até o
+            banco de dados.
           </p>
         </div>
         <div className="md:w-1/3 w-full mt-8 md:mt-0">
@@ -75,7 +77,9 @@ const About = () => {
                 variants={itemVariants}
                 className="flex h-auto items-center gap-1"
               >
-                <h2 className="md:text-5xl text-3xl text-white">{fact.value}</h2>
+                <h2 className="md:text-5xl text-3xl text-white">
+                  {fact.value}
+                </h2>
                 <span className="text-blue-100 text-lg">+</span>
                 <p className="mb-2 text-xs leading-tight text-white">
                   {fact.description}

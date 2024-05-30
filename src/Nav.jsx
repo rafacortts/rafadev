@@ -41,7 +41,7 @@ const Nav = () => {
         <div className='flex justify-between items-center text-base gap-8'>
           <a href="#" className='text-2xl flex items-center space-x-3'>RafaDev</a>
 
-          <ul className='md:flex space-x-12 hidden'>
+          <ul className='md:flex space-x-12 hidden '>
             {navItems.map(({ link, path }) => (
               <Link
                 key={path}
